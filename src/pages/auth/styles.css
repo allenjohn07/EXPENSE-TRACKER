@@ -1,59 +1,76 @@
 /* styles.css */
 
 .auth {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #121212; /* Black background */
-    font-family: 'Helvetica', sans-serif; /* Use Helvetica font */
-    color: #ffffff; /* White text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212; /* Black background */
+  font-family: 'Helvetica', sans-serif; /* Use Helvetica font */
+  color: #ffffff; /* White text color */
+}
+
+img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.heading {
+  color: gold;
+  font-size: 36px; /* Larger font size for the heading */
+  margin: 40px 0 0 40px; /* Margin for the heading (top, right, bottom, left) */
+  position: absolute; /* Position the heading absolutely */
+  top: 0; /* Align heading to the top */
+  left: 0; /* Align heading to the left */
+  cursor: pointer;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-text {
+  color: #7f7f7f;
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-with-google-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  background-color: gold; /* Google Blue */
+  color: #000000; /* White text color */
+  border: none;
+}
+
+.login-with-google-btn:hover {
+  background-color: #242424; /* Google Blue */
+  color: gold; /* White text color */
+  border: none;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    margin: 20px 0 0 20px; /* Adjusted margin for smaller screens */
   }
 
-  img{
-    height:35px;
-    margin-right: 10px;
-  }
-  
-  .heading {
-    color: gold;;
-    font-size: 36px; /* Larger font size for the heading */
-    margin: 40px 0 0 40px; /* Margin for the heading (top, right, bottom, left) */
-    position: absolute; /* Position the heading absolutely */
-    top: 0; /* Align heading to the top */
-    left: 0; /* Align heading to the left */
-    cursor: pointer;
-  }
-  
-  .login-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .login-text {
-    color: #7f7f7f;
-    font-size: 34px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
   }
-  
+
   .login-with-google-btn {
-    padding: 12px 24px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    background-color: gold; /* Google Blue */
-    color: #000000; /* White text color */
-    border: none;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
   }
-  
-  .login-with-google-btn:hover {
-    background-color: #242424; /* Google Blue */
-    color: gold; /* White text color */
-    border: none;
-  }
-  
+}
